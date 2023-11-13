@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="images/tabicon (2).png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/tabicon (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/041de09ebe.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer,</p>
+                <h1>Hey, I'm <span>Yared Tamirat</span> <br> from Ethiopia.</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--------------------------about page-------------------------->
+
+    <button id="back-to-top-btn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Picsart_6-removebg-preview.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> A website developer.I have been working in the field of web development for almost two years
+                        now.I am passionate about creating websites that are not only visually appealing but also
+                        user-friendly and accessible to everyone. I believe that a website should be able to convey the
+                        message of the business or individual it represents while providing a seamless user experience.
+                        Apart from web development, I am enthusiast about cyber security. I believe that having a
+                        healthy
+                        work-life balance is essential to maintain productivity and creativity.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab_contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX </span><br>Designing Web interfaces</li>
+                            <li><span>Web Developement</span><br>Web app developement</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current </span><br>Junior IT Officer at <a href="https://siinqeebank.com/"
+                                    id="siinqeebank">Siinqee Bank S.C.</a></li>
+                            <li><span>2022 - 2023</span><br>Internship at JiT AI center</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>2023 </span><br>BSc. in Computer Science from <a href="https://ju.edu.et/jit/"
+                                    id="jimma">Jimma University Institute of Technology</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!----------------------------------services----------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I offer professional web design services that are affordable, reliable, and delivered on time. My
+                        designs are creative, engaging, and designed to convert visitors into customers. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I specialize in creating visually stunning and user-friendly interfaces that help businesses grow
+                        and succeed online. My designs are tailored to meet the unique needs of each client and are
+                        optimized for search engines and mobile devices. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>App Design</h2>
+                    <p>I provide high-quality app design services that are focused on delivering results. My designs are
+                        visually stunning, user-friendly, and optimized for search engines and mobile devices. I use a
+                        data-driven approach to create apps that drive engagement, retention, and revenue. </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Portfolio---------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jfif">
+                    <div class="layer">
+                        <h3>Vital Events Registration </h3>
+                        <p> A web based application that registers vital events for kebele
+                            residents.</p>
+                        <a href="https://github.com/yaredtam"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/appointment.jfif">
+                    <div class="layer">
+                        <h3>Appointment Scheduler</h3>
+                        <p> A web based application that helps to schedule appointments online.</p>
+                        <a href="https://github.com/yaredtam"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/plagiarism.jfif">
+                    <div class="layer">
+                        <h3>Plagiarism Checker </h3>
+                        <p> AI based web application that checks the originality of projects.</p>
+                        <a href="https://github.com/yaredtam"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---------------------Contact---------------->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <div class="mailphone">
+                        <a href="mailto:yaredtamirat1439@gmail.com"><i class="fa-regular fa-envelope"></i>
+                            yaredtamirat1439@gmail.com</a> <br><br>
+                        <a href="tel:+251941851439"><i class="fa-solid fa-phone"></i> +251941851439</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yaredtamrat-650331210?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoiHD%2F2W8R2Sq1EUsAeyxSA%3D%3D"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/yaredtam" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://t.me/yadlly" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/yad.lly/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/YaredTamratCV.pdf" download class="btn"><i class="fa-solid fa-download"></i>
+                        Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="3" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Yared Tamirat. Powered by yad.lly.</p>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab_contents');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link')
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-180px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbww_rpnCx3dQOmSlTwA57Idxbbutvc8FX5yPr6reHlhjYqgJoP4z4LZ43LZ7jh6Hn9_/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        // Add this function to scroll to the top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // Add this event listener to show/hide the button based on scroll position
+        window.addEventListener("scroll", function () {
+            var backToTopBtn = document.getElementById("back-to-top-btn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        });
+
+    </script>
+</body>
+
+</html>
